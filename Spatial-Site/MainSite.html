@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Site</title>
+    <link rel="stylesheet" href="./MainStyle.css">
+    <link rel="icon" type="image/x-icon" href="./MainIcon.ico">
+</head>
+
+<body>
+    <h1>Welcome To My Site!</h1>
+    <fieldset>
+        <legend>
+            <h3>Registration</h3>
+        </legend>
+        <form action="/submit-name" method="POST" onsubmit="SayThanks(event)">
+            <label>Enter Your Name:</label>
+            <input type="text" id="name" placeholder="Name..." size="15" minlength="3" maxlength="20" required>
+            <br><br>
+            <button type="submit">Enter</button>
+        </form>
+    </fieldset>
+    <br>
+    <hr>
+    <p>Created by <a href="./Tic-Tac-Toe_Site.html" target="_blank"><b>Mahdi Ziaaddini</b></a></p>
+    <hr>
+    
+    <script src="./MainScript.js"></script>
+</body>
+
+</html>
