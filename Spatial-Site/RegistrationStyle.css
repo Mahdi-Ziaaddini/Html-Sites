@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+h1:hover {
+    color: aqua;
+    transition: 0.5s;
+}
+
+h1 {
+    color: blue;
+    border-width: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    border-width: 10px;
+    border-radius: 25px;
+    background-color: rgb(138, 143, 148);
+    transition: 0.5s;
+}
+
+button {
+    border-width: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+hr {
+    border: 10px;
+}
+
+div:hover {
+    width: 100px;
+    height: 30px;
+    border-top: 10px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    font-weight: bolder;
+    color: khaki;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+div {
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: khaki;
+    color: deepskyblue;
+    font-weight: normal;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+#div2 {
+    animation-timing-function: ease;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        left: -130px;
+    }
+
+    to {
+        left: calc(50% - 50px);
+    }
+}
